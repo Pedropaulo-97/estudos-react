@@ -4,7 +4,7 @@ import { useState } from 'react'
 function FormContato() {
   const [contato, setContato] = useState({
     nome: '',
-    contato: ''
+    telefone: ''
   })
 
   function handleChange(e) {
@@ -13,27 +13,32 @@ function FormContato() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    if (!contato.nome || !contato.contato) {
+    if (!contato.nome || !contato.telefone) {
       alert('Preencha todos os campos!')
       return
     }
     console.log('Contato agendado:', contato)
-    setContato({ nome: "", contato: "" })
+    setContato({ nome: "", telefone: "" })
   }
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="nome">Nome</label>
       <input
+        id="nome"
         name="nome"
         value={contato.nome}
         onChange={handleChange}
-        placeholder="Seu nome"
+        placeholder="Nome completo"
       />
+
+      <label htmlFor="telefone">Contato</label>
       <input
-        name="contato"
-        value={contato.contato}
+        id="telefone"
+        name="telefone"
+        value={contato.telefone}
         onChange={handleChange}
-        placeholder="Seu contato"
+        placeholder="(85) 98585-8585"
       />
       <button type="submit">Enviar</button>
     </form>
@@ -41,13 +46,4 @@ function FormContato() {
 }
 
 
-function App() {
-  return (
-    <div>
-      <FormContato />
-    </div>
-  )
-};
-
-
-export default App;
+export default FormContato

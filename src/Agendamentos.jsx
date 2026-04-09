@@ -24,20 +24,28 @@ function AgendamentoConsulta() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <label htmlFor="nome">Nome</label>
       <input
+        id="nome"
         name="nome"
         value={consulta.nome}
         onChange={handleChange}
         placeholder="Nome completo"
       />
+
+      <label htmlFor="data">Data</label>
       <input
+        id="data"
         type="date"
         name="data"
         value={consulta.data}
         onChange={handleChange}
         placeholder="Data da consulta"
       />
+
+      <label htmlFor="horario">Horario</label>
       <input
+        id="horario"
         type='time'
         name="horario"
         value={consulta.horario}
@@ -50,14 +58,4 @@ function AgendamentoConsulta() {
 }
 
 
-
-function App() {
-  return (
-    <div>
-      <AgendamentoConsulta />
-    </div>
-  )
-};
-
-
-export default App;
+export default AgendamentoConsulta
