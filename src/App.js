@@ -1,6 +1,7 @@
 import FormContato from "./FormContato"
 import AgendamentoConsulta from "./Agendamentos"
 import BuscaCep from "./BuscaCep"
+import ListaMedicos from "./RestHTTP";
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div>
         <FormContato/><br></br>
         <AgendamentoConsulta/><br></br>
-        <BuscaCep/>
+        <BuscaCep/><br></br>
+        <ListaMedicos/>
     </div>
   )
 };
