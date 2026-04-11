@@ -1,7 +1,7 @@
 import FormContato from "./FormContato"
 import AgendamentoConsulta from "./Agendamentos"
 import BuscaCep from "./BuscaCep"
-import ListaMedicos from "./RestHTTP";
+import ListaMedicos from "./ListaMedicos";
 
 
 function App() {
