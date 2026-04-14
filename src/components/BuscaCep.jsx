@@ -18,14 +18,15 @@ function BuscaCep() {
   }, [cep])
 
   return (
+    
     <div>
-      <label htmlFor="cep">CEP</label>
+      <label htmlFor="cep">CEP: </label>
       <input
         id="cep"
         name="cep"
         value={cep}
         onChange={(e) => setCep(e.target.value)}
-        placeholder="Ex: 01310100"
+        placeholder="00000-000"
       />
 
       {buscando && <p>Buscando...</p>}
