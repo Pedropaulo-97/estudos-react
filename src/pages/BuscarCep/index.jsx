@@ -1,8 +1,7 @@
 function BuscaCep() {
   return (
     <div>
-      <h2>Bem vindo ao Buscar CEP:</h2>
-      <BuscaCep/>
+      <BuscaCep />
     </div>
   )
 };

@@ -8,11 +8,16 @@ header {
     padding: 0 25px;
 }
 
-h2 {
+.logo-header {
     color: white;
     font-family: sans-serif;
     font: bold;
     font-size: 30px;
+}
+
+h2{
+    color: black;
+    font-family: sans-serif;
 }
 
 a {
